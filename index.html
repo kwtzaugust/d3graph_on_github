@@ -3,19 +3,70 @@
 <head>
     <!-- <title>Force-Directed Graph</title> -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <style>
-        /* Add a content container */
+    <!-- <style>
         .content {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
             font-family: Arial, sans-serif;
         }
-        body { margin: 0; overflow: hidden; }
+
+        body { margin: 0; 
+        }
+
         svg { width: 100%; height: 100vh; }
         .node { cursor: move; }
         .link { stroke: #999; stroke-opacity: 0.6; }
-    </style>
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        body { 
+            margin: 0; 
+        }
+
+        svg { 
+            width: 100%; 
+            height: 100vh; 
+        }
+
+        .node { 
+            cursor: move; 
+        }
+
+        .link { 
+            stroke: #999; 
+            stroke-opacity: 0.6; 
+        }
+
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            width: auto;
+            padding: 8px;
+            font: 12px sans-serif;
+            background: lightsteelblue;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+
+        .link:hover {
+            stroke-opacity: 1;
+        }
+
+        .node:hover {
+            stroke: black;
+            stroke-width: 2px;
+        }
+        
+    </style> -->
+    <link rel="stylesheet" href="styles/styles.css">
+    
 </head>
 <body>
     
@@ -26,8 +77,8 @@
         
         <ul>
             <li>Drag nodes to explore</li>
-            <li>Automatic scaling</li>
             <li>Dynamic forces between nodes</li>
+            <li>Hover to show character names and relationship strength</li>
         </ul>
 
     <script src="scripts/graph.js"></script>
